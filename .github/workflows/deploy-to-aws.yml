@@ -4,6 +4,9 @@ on:
     push:
         paths:
             - 'production/**'
+    pull_request:
+        branches:
+            - 'main'        
 
 jobs:
   deploy:
